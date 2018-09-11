@@ -1,0 +1,19 @@
+
+
+
+
+
+
+Fixes
+=====
+0) Prefer whitelisting approach over blacklisting in all circumstances.
+1) Accept files with extensions of only allowed file types and reject everything else. || match the extesnion with a dictionary of allowed file extensions.
+2) Reject double extensions || Consider everything after the first dot in a file name to be its extension || Implement step 1.
+3) Accept only whitelisted file type based on mime checks.
+4) Accept only whitelisted file types based on file signatures/magic numbers. [https://en.wikipedia.org/wiki/List_of_file_signatures || https://www.garykessler.net/library/file_sigs.html || https://filesignatures.net/index.php?search=DOCX&mode=EXT]
+5) When the file is uploaded, assign a unique file name to it generated using a random algorithm.
+6) Make sure the uploaded file is stored in a directory outside the web root.
+7) Make sure the uploaded file is not downloaded without proper access control check.
+8) Make sure the directory to which the uplaoded file is stored, does not provide executable permissions.
+9) Make a copy of the uploaded file with the same/different reconizable name and delete the original file.
+10) Check the content of the file incase of xlsx(formula injection), docs/flash/pdfs,etc(document embedded code), virus signature/malicious code. This can be done through code or by installing the antivirus in the server.
