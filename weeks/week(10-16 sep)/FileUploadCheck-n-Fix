@@ -17,3 +17,15 @@ Fixes
 8) Make sure the directory to which the uplaoded file is stored, does not provide executable permissions.
 9) Make a copy of the uploaded file with the same/different reconizable name and delete the original file.
 10) Check the content of the file incase of xlsx(formula injection), docs/flash/pdfs,etc(document embedded code), virus signature/malicious code. This can be done through code or by installing the antivirus in the server.
+
+
+Only allow specific file extensions.
+Only allow authorized and authenticated users to use the feature.
+Check any file fetched from the Web for content. Make sure it is actually an image or whatever file type you expect.??
+Serve fetched files from your application rather than directly via the web server.
+Store files in a non-public accessibly directory if you can.
+Write to the file when you store it to include a header that makes it non-executable.**
+
+
+
+need to get a coding level fix??
