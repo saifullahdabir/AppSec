@@ -1,1 +1,63 @@
-test
+Critical
+========
+
+
+
+High
+====
+SSL Not Implemented
+DLL Hijacking
+Authentication based on username
+Privilege escalation through parameter modification
+SSL not implemented
+Sensitive data in response
+Unrestricted access to root directories
+Formula injection
+Client-side authentication check
+SQL Injection
+Unsupported version of OS
+Plain text credentials hardcoded on Client-side
+File upload with double extensions
+Database connection details in process dump
+Database connection details in config file
+
+
+Medium
+======
+Weak encryption and hashing algorithms used [MD5 and SHA-1 hashing algorithms can be easily brute forced due to short length and are also vulnerable to collision attacks.]
+Outdated version of server in use
+Accessible Web Hosting System - tomcat config login page visible
+
+Improper error handling
+Log Forging
+Using obsolete software versions and patches
+Web services publish WSDL information
+
+Low
+===
+Hard Coded Database Credentials - [findsecbugs_cli for jar file]
+SQL Injection - [findsecbugs_cli for jar file][prepared statement not used]
+Code not obfuscated - [findsecbugs_cli for jar file]
+Older version of Apache Ant used - [findsecbugs_cli for jar file]
+
+Code not obfuscated
+Older version of Apache Ant used
+Improper Cache Management
+Server version disclosure
+Improper Error Handling
+OPTIONS method enabled
+Missing HSTS Header
+Missing X-Content-Type-Options Header
+Missing X-XSS-Protection Header
+Missing X-Frame-OPTIONS Header
+Weak protocols and weak cipher suites
+Application code not obfuscated
+HTTP response header misconfiguration
+
+Informational
+=============
+Insecure Coding
+
+
+jar file - JD GUI
+.net dotpeek decompiler
