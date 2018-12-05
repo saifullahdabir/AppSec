@@ -1,1 +1,39 @@
 test
+
+For Android:
+Burp Suite Professional
+Xamarin Emulator
+Android Studio
+Network Miner
+SQlite browser
+APKtool
+Enjarify/Dex2jar
+JD-GUI
+Tpacket capture
+
+
+
+For iOS:
+iExplorer, Fileviewer
+Xcode
+Pacifist
+MobSF
+Wireshark
+TCP dump
+Python
+Burp Suite Professional
+Mac image
+
+
+List of Common Vulnerabilities
+Weak Server Side Controls
+Insecure Data Storage
+Insufficient Transport Layer Protection
+Unintended Data Leakage
+Poor Authorization and Authentication
+Broken Cryptography
+Client Side Injection
+Security Decisions via Untrusted Inputs
+Improper Session Handling
+Lack of Binary Protections
+
