@@ -1,4 +1,41 @@
 test
+https://sushi2k.gitbooks.io/the-owasp-mobile-security-testing-guide/content/0x05e-Testing-Cryptography.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 For Android:
 Burp Suite Professional
@@ -36,4 +73,8 @@ Client Side Injection
 Security Decisions via Untrusted Inputs
 Improper Session Handling
 Lack of Binary Protections
+
+
+
+
 
