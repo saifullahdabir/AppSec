@@ -1,1 +1,10 @@
 test
+
+
+File upload fix
+===============
+
+
+https://www.codeproject.com/Questions/1208101/How-to-block-malicious-files-while-uploading-exe-m
+https://stackoverflow.com/questions/25031190/prevent-an-exe-from-being-uploaded-even-after-renaming-its-extention
+https://www.paloaltonetworks.com/documentation/80/pan-os/pan-os/threat-prevention/set-up-file-blocking
