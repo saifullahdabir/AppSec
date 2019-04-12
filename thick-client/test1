@@ -1,0 +1,44 @@
+1. To check memory level protections - PE security - Done. issues peresent
+
+https://blog.netspi.com/verifying-aslr-dep-and-safeseh-with-powershell/
+
+2. String Based analysis- We can get hardcoded passwords/ dangerous functions/ sensitive urls etc from here. - Process Explorer Strings Tab. https://blog.didierstevens.com/2006/07/07/viewing-strings-in-executables/
+The strings in an executable will give you an idea of what this program will do: you’ll recognize registry keys, URLs, filenames, …
+- jsut checked in main process.
+
+
+3.Configuration file checks
+directly take a look for installation folder of the application which you are testing. The xml files, db files and config files are bound to give you something or other as information. - done
+
+4. Registry check to see if any sensitive infromation is stored in there. - Regshot - done. no issues.
+
+5. Checking permissions on files and registries - need to research on this. - right click and look into the properties->security-permissions for users to see what permissions the current/normal user has on this file. How is it set? :Normal users have read and read&execute permissions only.
+AccessEnum in sysinternals does automation of this thing by scanning for permissions for the directory and files.
+https://docs.microsoft.com/en-us/sysinternals/downloads/accessenum
+https://underthehood-autodesk.typepad.com/blog/2016/05/understanding-the-deny-permission.html
+accesschk.exe sysinternals privilege escalation
+
+registry check pending..need to check for each registry.Howe to??
+chrome-extension://cbnaodkpfinfiipjblikofhlhlcickei/src/pdfviewer/web/viewer.html?file=https://www.owasp.org/images/0/0d/Finding_Privilege_Escalations_OWASP_Stammtisch_Stuttgart_17-11-06.pdf
+
+6. Memory Inspection to find passwords - WinHex - Use encryption logic to prevent passwords and credentials from being logged into the memory. How to implement this at code level?? - done. not found
+
+7. Reverse Engineering / Code Decompilation/Code Obfuscation - code not obfuscated. - found
+For exe files, you can use Ollydbg/ IDA Pro. For java based thick clients you can use JD-GUI to find the code.
+DotPeek to decompile.
+Employ “obfuscation logic” to protect source code decompilation and reverse engineering attempts. (Just flag code not obfuscated vulnerability)
+
+8. Secure code review/static analysis/dependencies and libraries(for jars. is it also true for .net apps?). - secure code scan using IDA Pro.
+https://medium.com/@tstillz17/basic-static-analysis-part-1-9c24497790b6
+https://samate.nist.gov/index.php/Binary_Code_Scanners.html
+https://resources.infosecinstitute.com/basics-of-ida-pro-2/#gref
+https://www.awesome-testing.com/2017/02/continuous-security-with-owasp.html
+
+comparative study - chrome-extension://cbnaodkpfinfiipjblikofhlhlcickei/src/pdfviewer/web/viewer.html?file=https://zenodo.org/record/31938/files/SummerStudentReport-StavrosMoiras.pdf
+chrome-extension://cbnaodkpfinfiipjblikofhlhlcickei/src/pdfviewer/web/viewer.html?file=http://www8.cs.umu.se/education/examina/Rapporter/AlexanderRamos.pdf
+
+9. DLL Hijacking - Metasploit
+https://www.cybereason.com/blog/blog-siofra-free-tool-exposes-dll-hijacking-vulnerabilities-in-windows
+
+
+Plus previous pentest issues.
