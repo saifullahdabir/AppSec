@@ -5,6 +5,6 @@ ASLR
 DEP
 SafeSEH - https://github.com/NetSPI/PESecurity/issues/16  || http://scx010c075.blogspot.com/2012/02/more-about-seh-and-safeseh.html
 StrongNaming - https://docs.microsoft.com/en-us/dotnet/framework/app-domains/strong-named-assemblies
-Authenticode
-Control Flow Guard
-HighEntropyVA
+Authenticode - http://www.tech-pro.net/authenticode.html || https://docs.microsoft.com/en-us/windows-hardware/drivers/install/authenticode
+Control Flow Guard - https://docs.microsoft.com/en-us/windows/desktop/secbp/control-flow-guard
+HighEntropyVA - https://docs.microsoft.com/en-us/cpp/build/reference/highentropyva?view=vs-2019
