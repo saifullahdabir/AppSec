@@ -1,0 +1,10 @@
+PowerShell script to check if a Windows binary (EXE/DLL) has been compiled with ASLR, DEP, SafeSEH, StrongNaming, Authenticode, Control Flow Guard, and HighEntropyVA.
+
+https://blog.netspi.com/verifying-aslr-dep-and-safeseh-with-powershell/
+ASLR
+DEP
+SafeSEH - https://github.com/NetSPI/PESecurity/issues/16  || http://scx010c075.blogspot.com/2012/02/more-about-seh-and-safeseh.html
+StrongNaming - https://docs.microsoft.com/en-us/dotnet/framework/app-domains/strong-named-assemblies
+Authenticode
+Control Flow Guard
+HighEntropyVA
