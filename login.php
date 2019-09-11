@@ -14,7 +14,7 @@ if($link2 === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 
-if (isset($_POST["username"])) {
+if (isset($_POST['username'])) {
 	$username = $_POST['username'];
 }
 else {
@@ -22,7 +22,7 @@ else {
 	
 }
 
-if (isset($_POST["password"])) {
+if (isset($_POST['password'])) {
 	$password = $_POST['password'];
 }
 else {
@@ -46,9 +46,9 @@ if ($result = $link2->query($sql)) {
 		echo'</table>';
 	}
 }
-/* else{
-	echo "Error: secret could not be saved";
-} */
+else{
+	echo "Error: Invalid Credentials";
+}
 $link2->close();
 
 ?>
