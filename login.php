@@ -14,16 +14,16 @@ if($link2 === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 
-if (isset($_REQUEST["username"])) {
-	$username = $_REQUEST['username'];
+if (isset($_POST["username"])) {
+	$username = $_POST['username'];
 }
 else {
 	$username = "";
 	
 }
 
-if (isset($_REQUEST["$password"])) {
-	$password = $_REQUEST['password'];
+if (isset($_POST["password"])) {
+	$password = $_POST['password'];
 }
 else {
 	$password = "";
@@ -49,7 +49,7 @@ if ($result = $link2->query($sql)) {
 /* else{
 	echo "Error: secret could not be saved";
 } */
-$link1->close();
+$link2->close();
 
 ?>
 
