@@ -14,8 +14,22 @@ if($link2 === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 
-$username = $_REQUEST['username'];
-$password = $_REQUEST['password'];
+if (isset($_REQUEST["username"])) {
+	$username = $_REQUEST['username'];
+}
+else {
+	$username = "";
+	
+}
+
+if (isset($_REQUEST["$password"])) {
+	$password = $_REQUEST['password'];
+}
+else {
+	$password = "";
+}
+
+
 $sql = "SELECT flag FROM users WHERE username = $username AND password = '$password' ";
 if ($result = $link2->query($sql)) {
 	if ($result->num_rows > 0) {
