@@ -37,8 +37,10 @@ $secret1 = $link1->real_escape_string($_REQUEST['secret']);
 //echo "<script>alert(".$secret1.");</script>";
 //echo $secret;
 //echo $secret1;
-$sql = "INSERT INTO xss (secret) VALUES ('$secret1')";
-if ($result = $link1->query($sql)) {
+$sql= "INSERT INTO xss (secret) VALUES (:secret)";
+$stmt = $link1->prepare($sql);
+$stmt->bindParam(':secret', $secret);
+if ($result = $stmt->execute()) {
 echo "Your secret has been saved<br><br>";
 }
 /* else{
