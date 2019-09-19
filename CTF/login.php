@@ -34,7 +34,8 @@ else {
    
    <head>
       <title>Login Page</title>
-      
+      <meta http-equiv="refresh" content="30;URL='/login.php'">
+	   
       <style type = "text/css">
          body {
             font-family:Arial, Helvetica, sans-serif;
