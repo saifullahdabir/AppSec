@@ -6,3 +6,4 @@
       alert("XSS");
    </script>
 </svg>
+<!--
