@@ -1,7 +1,5 @@
-<?xml version="1.0" standalone="no"?>
-<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
-<rect width="3200" height="6400" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
-  <script type="text/javascript">
-    alert(1);
-  </script>
+<svg xmlns="http://w3.org" viewBox="0 0 100 100">
+   <script>
+      alert('XSS');
+   </script>
 </svg>
